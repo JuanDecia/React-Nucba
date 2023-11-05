@@ -1,10 +1,11 @@
 import React from "react";
 import styled from 'styled-components';
+import imagen from '../../assets/logo-almagro-removebg-preview.png'
 
 const ContenedorLogo = () => {
     return (
         <div>
-            <LogoContainer className="logo-img" src="./src/assets/logo-almagro-removebg-preview.png" alt="logo-almagro" />
+            <LogoContainer className="logo-img" src={imagen} alt="logo-almagro" />
         </div>
 
     )
