@@ -1,5 +1,8 @@
 import React from "react";
 import styled from 'styled-components';
+import imgDesarrollo from '../../assets/desarrollo-integral.jpg';
+import imgComunidad from '../../assets/comunidad deportiva.jpg';
+import imgSocio from '../../assets/socio.png';
 
 const Actividades = () => {
     return (
@@ -18,7 +21,7 @@ const Actividades = () => {
                         </p>
                     </div>
 
-                    <img src="../../src/assets/desarrollo-integral.jpg" alt="desarrollo-integral" />
+                    <img src={imgDesarrollo} alt="desarrollo-integral" />
                 </div>
                 <div className="card">
                     <div className="card-descripcion">
@@ -29,7 +32,7 @@ const Actividades = () => {
                         </p>
                     </div>
 
-                    <img src="../../src/assets/comunidad deportiva.jpg" alt="" />
+                    <img src={imgComunidad} alt="comunidad" />
                 </div>
                 <div className="card">
                     <div className="card-descripcion">
@@ -40,7 +43,7 @@ const Actividades = () => {
                         </p>
                     </div>
 
-                    <img src="../../src/assets/socio.png" alt="" />
+                    <img src={imgSocio} alt="socio" />
                 </div>
             </div>
         </ContenedorActividades>

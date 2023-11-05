@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import imagenEquipo from '../../assets/equipo-almagro-2.jpg';
 
 const Hero = () => {
     return (
@@ -10,7 +11,7 @@ const Hero = () => {
             </div>
             
             <div className="cont-foto-equipo">
-                <img className="foto-equipo" src="../src/assets/equipo-almagro-2.jpg" alt="equipo almagro" />
+                <img className="foto-equipo" src={imagenEquipo} alt="equipo almagro" />
             </div>
 
         </ContenedorHero>
