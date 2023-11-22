@@ -1,6 +1,7 @@
 import React from "react";
 import ContenedorLogo from "./Logo";
 import './Header.css';
+import MenuHeader from "./Menu";
 
 const Header = () => {
     return (
@@ -25,6 +26,10 @@ const Header = () => {
                         <a href="#">Contacto</a>
                     </li>
                 </ul>
+
+                {/* Menu */}
+                <MenuHeader />
+                
             </nav>
         </header>
     )
