@@ -1,38 +1,54 @@
 import React from "react";
-import ContenedorLogo from "./Logo";
-import './Header.css';
-import MenuHeader from "./Menu";
+import { AboutContainerStyled, ContactContainerStyled, HeaderContainerStyled, HomeContainerStyled, LinksContainerStyled, ProductsContainerStyled } from "./HeaderStyles";
+import imgLogo from '../../assets/logo-juan.png';
+
+// Icons
+import { HiOutlineHome } from 'react-icons/hi';
+import { IoPersonOutline } from 'react-icons/io5';
+import { SiBookstack } from 'react-icons/si';
+import { IoMailOutline } from 'react-icons/io5';
 
 const Header = () => {
     return (
-        <header>
+        <HeaderContainerStyled>
+            <div>
+                <a href="/#">
+                    <img className="img-logo" src={imgLogo} alt="logo-juan" />
+                </a>
+            </div>
 
-            {/* Contenedor Logo */}
-            <ContenedorLogo />
+            <LinksContainerStyled>
+                <HomeContainerStyled>
+                    <a href="#">
+                        <HiOutlineHome />
+                        Home
+                    </a>
+                </HomeContainerStyled>
 
-            {/* Contenedor navbar */}
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#">Actividades</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto</a>
-                    </li>
-                </ul>
+                <AboutContainerStyled>
+                    <a href="#">
+                        <IoPersonOutline />
+                        About Me
+                    </a>
+                </AboutContainerStyled>
 
-                {/* Menu */}
-                <MenuHeader />
-                
-            </nav>
-        </header>
-    )
-}
+                <ProductsContainerStyled>
+                    <a href="#">
+                        <SiBookstack />
+                        Productos
+                    </a>
+                </ProductsContainerStyled>
+
+                <ContactContainerStyled>
+                    <a href="#">
+                        <IoMailOutline />
+                        Contacto
+                    </a>
+                </ContactContainerStyled>
+
+            </LinksContainerStyled>
+        </HeaderContainerStyled>
+    );
+};
 
 export default Header;

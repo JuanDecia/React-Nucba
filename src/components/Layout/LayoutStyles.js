@@ -1,0 +1,9 @@
+import styled from 'styled-components';
+
+export const LayoutWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+`

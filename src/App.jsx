@@ -1,17 +1,17 @@
-import { useState } from 'react';
+import Layout from './components/Layout/Layout';
 import Header from './components/header/Header';
-import Hero from './components/hero/Hero';
-import Actividades from './components/destacados/Actividades';
-import Footer from './components/footer/Footer';
 
 function App() {
 
   return (
     <>
       <Header />
-      <Hero />
+      <Layout>
+        
+      </Layout>
+      {/* <Hero />
       <Actividades />
-      <Footer />
+      <Footer /> */}
     </>
   )
 }
