@@ -1,17 +1,17 @@
-import Layout from './components/Layout/Layout';
-import Header from './components/header/Header';
+import AppWrapper from "./Components/AppWrapper/AppWrapper"
+import { Header } from "./Components/header/HeaderContainer"
+import { MainContainer } from "./Components/main/MainContainer"
+import { GlobalStyles } from "./styles/GlobalStyles"
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Layout>
-        
-      </Layout>
-      {/* <Hero />
-      <Actividades />
-      <Footer /> */}
+      <AppWrapper>
+        <Header />
+        <MainContainer />
+      </AppWrapper>
+      <GlobalStyles />
     </>
   )
 }
